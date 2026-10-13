@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4a1218">
+<title>Mohamed &amp; Nadine — Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Amiri:wght@400;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+<!-- 1. ENVELOPE -->
+<div class="env" id="env" role="button" tabindex="0" aria-label="Click to open the invitation">
+  <svg class="orn orn-top" viewBox="0 0 400 220" aria-hidden="true"><use href="#scroll"/></svg>
+  <svg class="orn orn-bot" viewBox="0 0 400 220" aria-hidden="true"><use href="#scroll"/></svg>
+  <div class="card" aria-hidden="true"><span>M</span><i>&amp;</i><span>N</span></div>
+  <div class="pocket"></div>
+  <div class="flap-wrap"><div class="flap">
+    <svg class="laurel" viewBox="0 0 200 110" aria-hidden="true"><use href="#laurel"/></svg>
+  </div></div>
+  <p class="click">Click To Open</p>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="scroll" fill="none" stroke="#e7c9b8" stroke-opacity=".28" stroke-width="2.2" stroke-linecap="round">
+      <path d="M200 20c-10 30-50 30-70 10s-10-50 20-40M200 20c10 30 50 30 70 10s10-50-20-40"/>
+      <path d="M200 60c-20 25-70 20-90 55s20 70 55 45M200 60c20 25 70 20 90 55s-20 70-55 45"/>
+      <path d="M200 20v180M200 100c-30 0-55 30-45 55M200 100c30 0 55 30 45 55"/>
+      <path d="M60 80c20-20 50 0 40 25s-40 10-30-10M340 80c-20-20-50 0-40 25s40 10 30-10"/>
+    </g>
+    <g id="laurel" fill="none" stroke="#d9b56a" stroke-width="2.4" stroke-linecap="round">
+      <path d="M100 100C70 95 40 70 22 20M100 100C130 95 160 70 178 20"/>
+      <path d="M100 100v-35" /><path d="M100 64c-8-8-8-20 0-28 8 8 8 20 0 28z" fill="#d9b56a"/>
+      <g fill="#d9b56a" stroke="none">
+        <ellipse cx="38" cy="62" rx="4" ry="9" transform="rotate(-35 38 62)"/><ellipse cx="55" cy="78" rx="4" ry="9" transform="rotate(-55 55 78)"/>
+        <ellipse cx="30" cy="40" rx="4" ry="9" transform="rotate(-15 30 40)"/><ellipse cx="76" cy="90" rx="4" ry="9" transform="rotate(-75 76 90)"/>
+        <ellipse cx="162" cy="62" rx="4" ry="9" transform="rotate(35 162 62)"/><ellipse cx="145" cy="78" rx="4" ry="9" transform="rotate(55 145 78)"/>
+        <ellipse cx="170" cy="40" rx="4" ry="9" transform="rotate(15 170 40)"/><ellipse cx="124" cy="90" rx="4" ry="9" transform="rotate(75 124 90)"/>
+      </g>
+    </g>
+  </defs>
+</svg>
+
+<button class="music" id="music" type="button" aria-label="Play background music" aria-pressed="false" hidden>
+  <svg class="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  <svg class="i-pause" viewBox="0 0 24 24"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+</button>
+
+<main id="top">
+
+<!-- 2. CHILDHOOD PHOTO -->
+<section class="screen babies">
+  <img src="images/babies.jpg" alt="Mohamed and Nadine as babies, hugging">
+  <div class="shade"></div>
+  <h2 class="rv">These Kids<br>Are Getting<br>Married</h2>
+</section>
+
+<!-- 3. COVER -->
+<section class="screen cover">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="cover-in">
+    <p class="small rv">Together with their families</p>
+    <h1 class="names rv"><span id="n1">Mohamed</span> <em>&amp;</em> <span id="n2">Nadine</span></h1>
+    <div class="divider rv" aria-hidden="true"><b></b><i></i><b></b></div>
+    <p class="date rv" id="coverDate">DD · MONTH · YYYY</p>
+  </div>
+  <a class="scroll" href="#verse" aria-label="Scroll down">Scroll<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+</section>
+
+<!-- 4. QURAN -->
+<section class="screen light verse" id="verse">
+  <div class="verse-in" dir="rtl" lang="ar">
+    <p class="bism rv">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيمِ</p>
+    <p class="ayah rv">﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنْفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ ﴾</p>
+    <p class="sadaqa rv">صدق الله العظيم</p>
+    <div class="divider gold rv" aria-hidden="true"><b></b><i></i><b></b></div>
+    <p class="en rv" dir="ltr" lang="en">“And among His signs is that He created for you spouses from among yourselves so that you may find tranquility in them, and He placed between you affection and mercy.”</p>
+    <p class="ref rv">سورة الروم — آية ٢١</p>
+  </div>
+</section>
+
+<!-- 5. COUNTDOWN -->
+<section class="screen dark count">
+  <h2 class="title rv">Counting Down</h2>
+  <div class="cd rv" id="cd" aria-live="off">
+    <div><strong id="d">--</strong><span>Days</span></div>
+    <div><strong id="h">--</strong><span>Hours</span></div>
+    <div><strong id="m">--</strong><span>Minutes</span></div>
+    <div><strong id="s">--</strong><span>Seconds</span></div>
+  </div>
+  <p class="here" id="here" hidden>The Day Is Here!</p>
+  <p class="note" id="cdNote">The countdown begins once the date is confirmed.</p>
+</section>
+
+<!-- 6. DETAILS -->
+<section class="screen light details">
+  <h2 class="title rv">The Details</h2>
+  <dl class="rv">
+    <div><dt>Date</dt><dd id="dDate">[Wedding date - to be confirmed]</dd></div>
+    <div><dt>Ceremony</dt><dd id="dTime"></dd></div>
+    <div><dt>Venue</dt><dd id="dVenue"></dd></div>
+    <div><dt>Address</dt><dd id="dAddr"></dd></div>
+    <div id="dressRow" hidden><dt>Dress Code</dt><dd id="dDress"></dd></div>
+  </dl>
+  <a class="btn rv" id="mapBtn" href="#" target="_blank" rel="noopener">View Location</a>
+</section>
+
+<!-- 7. RSVP -->
+<section class="screen dark rsvp">
+  <h2 class="title rv">Kindly Reply</h2>
+  <form id="rsvp" class="rv" novalidate>
+    <label>Your name<input id="gName" type="text" autocomplete="name" required></label>
+    <fieldset>
+      <legend>Will you attend?</legend>
+      <label class="pick"><input type="radio" name="att" value="Joyfully Accept" required><span>Joyfully Accept</span></label>
+      <label class="pick"><input type="radio" name="att" value="Regretfully Decline"><span>Regretfully Decline</span></label>
+    </fieldset>
+    <label>Number of guests<input id="gCount" type="number" min="1" max="20" value="1" inputmode="numeric" required></label>
+    <label>Message (optional)<textarea id="gMsg" rows="3"></textarea></label>
+    <p class="err" id="err" role="alert"></p>
+    <button class="btn" type="submit">Confirm Attendance via WhatsApp</button>
+    <p class="note">WhatsApp will open with your reply ready. Please press Send there to complete it.</p>
+  </form>
+</section>
+
+<!-- 8. CLOSING -->
+<section class="screen light closing">
+  <svg class="laurel2" viewBox="0 0 200 110" aria-hidden="true"><use href="#laurel"/></svg>
+  <p class="love rv">With Love,</p>
+  <p class="cnames rv" id="cNames">Mohamed &amp; Nadine</p>
+  <p class="en rv">Two hearts, one lifetime. We can't wait to celebrate with you.</p>
+  <button class="btn rv" id="toTop" type="button">Back to the Beginning</button>
+</section>
+
+</main>
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
